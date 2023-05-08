@@ -20,8 +20,6 @@ class UserAdapter(var listuser : List<getAllUserItem>) : RecyclerView.Adapter<Us
         holder.binding.tvname.text = listuser[position].name
         holder.binding.tvage.text = listuser[position].age.toString()
         holder.binding.tvaddress.text = listuser[position].address
-        holder.binding.tvusername.text = listuser[position].username
-        holder.binding.tvpass.text = listuser[position].password
     }
 
     override fun getItemCount(): Int {
